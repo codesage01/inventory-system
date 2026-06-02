@@ -9,7 +9,8 @@ app = FastAPI(title="Inventory & Order Management API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://inventory-system-opal-gamma.vercel.app/",  #  Vercel URL
+        "http://localhost:3000",],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
